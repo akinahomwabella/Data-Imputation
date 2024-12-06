@@ -28,8 +28,6 @@ Evaluation metrics: Mean Absolute Error (MAE), Root Mean Square Error (RMSE).
 Requirements
 Install the required Python packages using the following command:
 
-bash
-Copy code
 pip install -r requirements.txt
 Key Dependencies:
 numpy

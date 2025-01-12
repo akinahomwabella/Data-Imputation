@@ -1,70 +1,70 @@
-# Data-Imputation
-Overview
-This project combines two main tasks:
+# Data Imputation: Numerical Analysis in Data Science
 
-Twitter Sentiment Analysis: Using a Kaggle dataset for classification of tweets into various sentiments (e.g., Positive, Negative, Neutral).
-Financial Data Imputation: Handling missing data in financial datasets (e.g., Yahoo Finance) using advanced imputation techniques and evaluating the impact on forecasting models.
-Contents
-twitter_analysis.ipynb: Notebook for analyzing and classifying Twitter sentiment using machine learning models.
-financial_imputation.ipynb: Notebook for imputing missing data in financial datasets and testing various forecasting models.
-Features
-Twitter Sentiment Analysis:
-Preprocessing and feature engineering (e.g., sentiment polarity, subjectivity, TF-IDF vectorization).
-Model training and evaluation:
-Logistic Regression
-Random Forest
-Neural Networks
-Classification metrics: Accuracy, Precision, Recall, F1-Score.
-Financial Data Imputation:
-Handling missing values using:
-Linear Interpolation
-Spline Interpolation
-KNN Imputation
-Forecasting models:
-ARIMA
-Prophet
-LSTM
-Evaluation metrics: Mean Absolute Error (MAE), Root Mean Square Error (RMSE).
-Requirements
-Install the required Python packages using the following command:
+**Author:** Akinahom Wabella  
+**Institution:** Department of Mathematics and Statistics, Minnesota State University, Mankato  
+**Date:** December 5, 2024  
 
-pip install -r requirements.txt
-Key Dependencies:
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-textblob
-keras
-statsmodels
-fbprophet
-Data
-Twitter Sentiment Analysis Dataset:
+## Overview
 
-Source: Kaggle
-Description: A dataset containing tweets labeled with sentiments.
-Yahoo Finance Dataset:
+This project explores the application of **numerical analysis techniques** for improving prediction accuracy and data imputation in data science, with a focus on high-stakes domains like **financial stock markets** and **social media engagement**. By leveraging methods such as **Spline Interpolation**, **Polynomial Interpolation**, and **KNN Imputation**, the research demonstrates improvements in machine learning model performance through addressing missing or incomplete data.
 
-Source: Yahoo Finance
-Description: Financial data for stock prices, with potential gaps to test imputation methods.
-Usage
-Clone this repository:
-bash
-Copy code
-git clone https://github.com/akinahomwabella/Data-Imputation.git
-Open the notebooks:
-twitter_analysis.ipynb for sentiment analysis.
-financial_imputation.ipynb for financial data processing.
-Run the notebooks in Jupyter or a similar environment.
-Results
-Twitter Sentiment Analysis:
-Random Forest achieved the highest performance metrics across sentiments.
-Financial Data Imputation:
-LSTM provided the most accurate forecasts for volatile stocks after applying advanced imputation techniques.
-Code Repository
-Find the full implementation on GitHub: Data-Imputation
+## Objectives
 
-License
-This project is licensed under the MIT License.
+1. **Evaluate Advanced Imputation Techniques**  
+   Assess the impact of imputation methods like spline interpolation and KNN-based approaches on data quality and model accuracy.
+   
+2. **Enhance Feature Engineering**  
+   Introduce transformations such as log changes, rolling averages, and sentiment analysis tailored to financial forecasting and social media engagement classification.
 
+3. **Compare Domain-Specific Outcomes**  
+   Analyze the effectiveness of these methods across financial and social media datasets to derive cross-domain insights.
+
+## Methodology
+
+### Data Collection
+
+- **Financial Data**: Stock market data for companies like Apple, Tesla, Meta, and Microsoft, sourced from Yahoo Finance (2021-2024).  
+- **Social Media Data**: Twitter engagement dataset from Kaggle, enriched with features like sentiment analysis, text length, and hashtags.
+
+### Techniques
+
+- **Interpolation Methods**: Linear, spline, and KNN imputation for handling missing data.  
+- **Feature Engineering**: Lagged features, moving averages, and TF-IDF vectorization for enriched datasets.  
+- **Predictive Models**: ARIMA, Prophet, LSTM, Logistic Regression, Random Forest, and Neural Networks.
+
+## Results
+
+### Financial Data
+
+- **Models Used**: ARIMA, Prophet, LSTM  
+- **Key Findings**: LSTM outperformed others for volatile stocks like Tesla and Meta, while Prophet excelled in capturing smooth trends.  
+- **Imputation Impact**: Spline interpolation and KNN significantly enhanced data completeness and model accuracy.
+
+### Social Media Data
+
+- **Models Used**: Logistic Regression, Random Forest, Neural Networks  
+- **Key Findings**: Random Forest achieved the best overall performance (F1-Score: 92.28%), excelling in sentiment classification tasks with TF-IDF integration.
+
+## Key Insights
+
+1. **Imputation Methods**: KNN is effective for non-linear datasets, while linear interpolation suits smooth trends.  
+2. **Model Selection**: LSTM is ideal for highly volatile data, while Prophet is best for long-term trends with seasonality.  
+3. **Real-World Applications**: Improved forecasting models aid in portfolio management, risk assessment, and engagement classification.
+
+## Data and Code
+
+- **Datasets**:  
+  - Twitter Sentiment Analysis ([Kaggle](https://www.kaggle.com))  
+  - Yahoo Finance ([API](https://finance.yahoo.com))  
+- **Code Repository**: [GitHub - Data Imputation Project](https://github.com/akinahomwabella/Data-Imputation)
+
+## References
+
+1. Little, R. J. A., & Rubin, D. B. (2019). *Statistical Analysis with Missing Data*. Wiley.  
+2. Evan Buuren, S. (2018). *Flexible Imputation of Missing Data*. Chapman and Hall/CRC.  
+3. Jordan, M. I., & Mitchell, T. M. (2015). Machine learning: Trends, perspectives, and prospects. *Science, 349(6245)*.  
+4. Floridi, L., & Cowls, J. (2019). A unified framework of five principles for AI in society. *Harvard Data Science Review*.  
+
+---
+
+This research emphasizes the importance of high-quality data and numerical analysis in building robust AI systems, paving the way for more reliable applications in finance and social media analytics.

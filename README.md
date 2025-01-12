@@ -57,6 +57,7 @@ This project explores the application of **numerical analysis techniques** for i
   - Twitter Sentiment Analysis ([Kaggle](https://www.kaggle.com))  
   - Yahoo Finance ([API](https://finance.yahoo.com))  
 - **Code Repository**: [GitHub - Data Imputation Project](https://github.com/akinahomwabella/Data-Imputation)
+- **Research Paper**:https://www.researchgate.net/profile/Akinahom-Wabella
 
 ## References
 
